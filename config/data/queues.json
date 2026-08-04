@@ -1,0 +1,29 @@
+{
+  "publisher": {
+    "exchange": "sandbox.orders",
+    "routingKey": "locko.place"
+  },
+  "consumers": {
+    "statuses": {
+      "queueName": "ilisitsa_sandboxOrderStatus",
+      "exchange": "sandbox.order.status",
+      "routingKey": "sandbox.status",
+      "maxLength": 1000
+    },
+    "trades": {
+      "queueName": "ilisitsa_sandboxTrades",
+      "exchange": "sandbox.trades",
+      "maxLength": 1000
+    },
+    "orderbooks": {
+      "queueName": "ilisitsa_marketdataOrderbooksAlor",
+      "exchange": "marketdata.orderbooks.alor",
+      "maxLength": 50
+    },
+    "ticks": {
+      "queueName": "ilisitsa_marketdataTicksAlor",
+      "exchange": "marketdata.ticks.alor",
+      "maxLength": 1000
+    }
+  }
+}
